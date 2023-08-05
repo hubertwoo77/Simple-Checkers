@@ -74,6 +74,7 @@ public class Checkers {
             chessBoard.setGameBoard(playerInteraction.getChessBoard());
             whitePieces = playerInteraction.getNumTargets();
             chessBoard.printBoard();
+            System.out.println();
             if(!(blackPieces > 9 && whitePieces > 9)){
                 break;
             }
@@ -82,6 +83,7 @@ public class Checkers {
             chessBoard.setGameBoard(bot.getChessBoard());
             blackPieces = bot.getNumTargets();
             chessBoard.printBoard();
+            System.out.println();
         }
         if( whitePieces > blackPieces){
             System.out.println("You Lose!");
